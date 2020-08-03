@@ -14,7 +14,7 @@ class SidebarContainer extends Component {
 
   handleLinkClick(link) {
     const { history } = this.props;
-    history.push(link);
+    window.location.href = `${link}`;
     this.setState({
       activeLink: link,
     });
@@ -33,9 +33,15 @@ class SidebarContainer extends Component {
           vertical
           inverted
         >
-          <Header as="h3" style={{ paddingTop: 24, color: "white" }}>
+          <Menu.Header
+            as="h3"
+            style={{ paddingTop: 24, color: "white", cursor: "pointer" }}
+            onClick={() =>
+              this.handleLinkClick("/DataStructureVisualizations/")
+            }
+          >
             Visual Data Structures
-          </Header>
+          </Menu.Header>
           <Menu.Item
             name="arraylist"
             active={activeLink === "arraylist"}

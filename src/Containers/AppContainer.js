@@ -6,15 +6,9 @@ import SidebarContainer from "./SidebarContainer";
 import { getComponentToRender } from "../Helpers/componentHelpers";
 
 class AppContainer extends Component {
-  constructor(props) {
-    super(props);
-    console.log(props);
-  }
-
   render() {
     const { dataStructure } = this.props.match.params;
     const { history } = this.props;
-    console.log(history);
     const CurrentComponent = getComponentToRender(dataStructure);
     return (
       <SidebarContainer

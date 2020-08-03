@@ -89,14 +89,14 @@ class StackContainer extends Component {
             the stack. Using a backing LinkedList, you would simply use
             LinkedList's <code>addToFront()</code> method. For an example of how
             that works, take a look at our{" "}
-            <a href="/linkedlist">LinkedList section</a>. When using a backing
+            <a href="linkedlist">LinkedList section</a>. When using a backing
             array, you'd simply add the element to the end of the array (i.e
             where the size variable points). So, you would simply set{" "}
             <code>arr[size] = element</code> and then increment the{" "}
             <code>size</code> variable by 1. This is similar to ArrayList's{" "}
             <code>add(Object element)</code> method, and for an example of how
             that works, take a look at the{" "}
-            <a href="/arraylist">ArrayList section.</a> Overall, this results in
+            <a href="arraylist">ArrayList section.</a> Overall, this results in
             a complexity of <code>O(1)</code>.
           </p>
           <StackPush />
@@ -107,7 +107,7 @@ class StackContainer extends Component {
             Pringle off of the stack of Pringles. Using a backing LinkedList,
             you'd simply use LinkedList's <code>removeFromFront()</code> method.
             Again, for an example of that, checkout our{" "}
-            <a href="/linkedlist">LinkedList section</a>. When using a backing
+            <a href="linkedlist">LinkedList section</a>. When using a backing
             array, you'd simply remove and return the element from index{" "}
             <code>size - 1</code> as that represnets the top of your stack. This
             also helps with runtime as you don't have to shift any elments over
