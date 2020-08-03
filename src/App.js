@@ -6,23 +6,11 @@ import LandingContainer from "./Containers/LandingContainer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/DataStructureVisualizations">
       <div className="content">
         <Switch>
-          <Route
-            path="/DataStructureVisualizations"
-            exact
-            component={LandingContainer}
-          />
-          <Route
-            path="/DataStructureVisualizations/"
-            exact
-            component={LandingContainer}
-          />
-          <Route
-            path="/DataStructureVisualizations/:dataStructure"
-            component={AppContainer}
-          />
+          <Route path="/" exact component={LandingContainer} />
+          <Route path="/:dataStructure" component={AppContainer} />
         </Switch>
       </div>
     </BrowserRouter>
