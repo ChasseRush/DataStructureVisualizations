@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/DataStructureVisualizations/static/css/main.26ab47cc.chunk.css",
+    "main.js": "/DataStructureVisualizations/static/js/main.01cca702.chunk.js",
+    "main.js.map": "/DataStructureVisualizations/static/js/main.01cca702.chunk.js.map",
+    "runtime-main.js": "/DataStructureVisualizations/static/js/runtime-main.3cd2e167.js",
+    "runtime-main.js.map": "/DataStructureVisualizations/static/js/runtime-main.3cd2e167.js.map",
+    "static/js/2.d5eb0857.chunk.js": "/DataStructureVisualizations/static/js/2.d5eb0857.chunk.js",
+    "static/js/2.d5eb0857.chunk.js.map": "/DataStructureVisualizations/static/js/2.d5eb0857.chunk.js.map",
+    "index.html": "/DataStructureVisualizations/index.html",
+    "precache-manifest.60fd0ab7a072f86a0fee132b72c0a3b2.js": "/DataStructureVisualizations/precache-manifest.60fd0ab7a072f86a0fee132b72c0a3b2.js",
+    "service-worker.js": "/DataStructureVisualizations/service-worker.js",
+    "static/css/main.26ab47cc.chunk.css.map": "/DataStructureVisualizations/static/css/main.26ab47cc.chunk.css.map",
+    "static/js/2.d5eb0857.chunk.js.LICENSE.txt": "/DataStructureVisualizations/static/js/2.d5eb0857.chunk.js.LICENSE.txt",
+    "static/media/add.e3345b64.svg": "/DataStructureVisualizations/static/media/add.e3345b64.svg",
+    "static/media/get.f8904d77.svg": "/DataStructureVisualizations/static/media/get.f8904d77.svg",
+    "static/media/linkedlist-add.0ab4ec67.svg": "/DataStructureVisualizations/static/media/linkedlist-add.0ab4ec67.svg",
+    "static/media/linkedlist-addToBack.d82aa8c5.svg": "/DataStructureVisualizations/static/media/linkedlist-addToBack.d82aa8c5.svg",
+    "static/media/linkedlist-remove-from-front.060aa2be.svg": "/DataStructureVisualizations/static/media/linkedlist-remove-from-front.060aa2be.svg",
+    "static/media/linkedlist-removeFromBack.83c9596d.svg": "/DataStructureVisualizations/static/media/linkedlist-removeFromBack.83c9596d.svg",
+    "static/media/linkedlist.7c6d0e4e.svg": "/DataStructureVisualizations/static/media/linkedlist.7c6d0e4e.svg",
+    "static/media/remove.91188648.svg": "/DataStructureVisualizations/static/media/remove.91188648.svg",
+    "static/media/stack-pop.37601ba3.svg": "/DataStructureVisualizations/static/media/stack-pop.37601ba3.svg",
+    "static/media/stack-push.4e80216b.svg": "/DataStructureVisualizations/static/media/stack-push.4e80216b.svg",
+    "static/media/stackBackedByArray.5999bdf0.svg": "/DataStructureVisualizations/static/media/stackBackedByArray.5999bdf0.svg",
+    "static/media/stackBackedByLL.8403f474.svg": "/DataStructureVisualizations/static/media/stackBackedByLL.8403f474.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3cd2e167.js",
+    "static/js/2.d5eb0857.chunk.js",
+    "static/css/main.26ab47cc.chunk.css",
+    "static/js/main.01cca702.chunk.js"
+  ]
+}
