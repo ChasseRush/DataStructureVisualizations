@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b1c7439ef38ef23643cd69d494e01691",
+    "revision": "fed642d4da6c885766d18a345dfd59c4",
     "url": "/DataStructureVisualizations/index.html"
   },
   {
-    "revision": "e25e6bc20221fc1084cf",
+    "revision": "51c18e5a9498087678da",
     "url": "/DataStructureVisualizations/static/css/main.b614ce3c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DataStructureVisualizations/static/js/2.a6bd8e86.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e25e6bc20221fc1084cf",
-    "url": "/DataStructureVisualizations/static/js/main.6b9387ce.chunk.js"
+    "revision": "51c18e5a9498087678da",
+    "url": "/DataStructureVisualizations/static/js/main.44c8978f.chunk.js"
   },
   {
     "revision": "db44765c893396323bbb",
