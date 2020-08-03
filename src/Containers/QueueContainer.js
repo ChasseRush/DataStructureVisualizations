@@ -66,7 +66,7 @@ class QueueContainer extends Component {
             A <strong>queue</strong> is what is known as a <strong>FIFO</strong>{" "}
             <strong>abstract data type</strong>. We have two new definitions
             here so I'll break them down one at a time. Similar to{" "}
-            <a href="/stack">LIFO</a>, <strong>FIFO</strong> stands for{" "}
+            <a href="stack">LIFO</a>, <strong>FIFO</strong> stands for{" "}
             <strong>First in First out</strong>, in which we can only access the
             first thign that was added to the queue, and then the second, and
             the third, and then so on. You can think of this as a line of people
@@ -75,7 +75,7 @@ class QueueContainer extends Component {
             <strong>abstract data type</strong> is basically an outline on the
             expected behavior of the implemented data structure. It gives an
             idea as to how a data structure should be implemented, similar to an
-            interface. Like we've seen with <a href="/stack">stacks</a>, there
+            interface. Like we've seen with <a href="stack">stacks</a>, there
             can be different kinds of implementations using different kinds of
             backing strutures. Data structures are these implementations of the
             abstract data type.{" "}
@@ -95,14 +95,14 @@ class QueueContainer extends Component {
           </p>
 
           <p>
-            Queues have three basic methods, like <a href="/stack">stacks</a>:{" "}
+            Queues have three basic methods, like <a href="stack">stacks</a>:{" "}
             <code>add(Object element)</code>, <code>remove()</code>, and{" "}
             <code>peek()</code>. They're all pretty self-explanatory;{" "}
             <code>add(Object element)</code> adds an item to the back of the
             queue, <code>remove()</code> removes and returns the item at the
             front of the queue, and <code>peek()</code> just returns the first
             item in the queue without removing it, just like in{" "}
-            <a href="/stack">stacks</a>. You can think of them like this:{" "}
+            <a href="stack">stacks</a>. You can think of them like this:{" "}
             <code>add(Object element)</code> is when customer goes to the back
             of a line, <code>remove()</code> is when the customer at the front
             of the line is called to place their order, and <code>peek()</code>{" "}
@@ -116,7 +116,7 @@ class QueueContainer extends Component {
             with a backing array. Additionally, queues will have a size variable
             like the other data structures we've covered. Backing a queue with a
             LinkedList is simple, all you really need is an{" "}
-            <a href="/linkedlist">SLL</a> with a tail pointer. Then, the head
+            <a href="linkedlist">SLL</a> with a tail pointer. Then, the head
             would represent the front of the queue and the tail would represent
             the back of the queue. All you would need to do from there is simply
             implement LinkedList's <code>removeFromFront()</code> and{" "}
@@ -197,7 +197,7 @@ class QueueContainer extends Component {
           </p>
           <Header as="h3">So, how do these methods work?</Header>
           <p>
-            Similar to how we handled <a href="/stack">stacks</a>, any
+            Similar to how we handled <a href="stack">stacks</a>, any
             visualizations below will use a backing LinkedList.
           </p>
           <Header as="h4">add(Object element)</Header>
