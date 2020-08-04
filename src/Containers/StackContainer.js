@@ -10,6 +10,7 @@ import BigOTable from "../Components/BigOTable";
 
 class StackContainer extends Component {
   render() {
+    const { history } = this.props;
     return (
       <div>
         <Header as="h2" textAlign="center" style={{ paddingTop: 32 }}>
@@ -89,15 +90,25 @@ class StackContainer extends Component {
             the stack. Using a backing LinkedList, you would simply use
             LinkedList's <code>addToFront()</code> method. For an example of how
             that works, take a look at our{" "}
-            <a href="linkedlist">LinkedList section</a>. When using a backing
-            array, you'd simply add the element to the end of the array (i.e
-            where the size variable points). So, you would simply set{" "}
-            <code>arr[size] = element</code> and then increment the{" "}
+            <a
+              onClick={() => history.push("linkedlist")}
+              style={{ cursor: "pointer" }}
+            >
+              LinkedList section
+            </a>
+            . When using a backing array, you'd simply add the element to the
+            end of the array (i.e where the size variable points). So, you would
+            simply set <code>arr[size] = element</code> and then increment the{" "}
             <code>size</code> variable by 1. This is similar to ArrayList's{" "}
             <code>add(Object element)</code> method, and for an example of how
             that works, take a look at the{" "}
-            <a href="arraylist">ArrayList section.</a> Overall, this results in
-            a complexity of <code>O(1)</code>.
+            <a
+              onClick={() => history.push("arraylist")}
+              style={{ cursor: "pointer" }}
+            >
+              ArrayList section.
+            </a>{" "}
+            Overall, this results in a complexity of <code>O(1)</code>.
           </p>
           <StackPush />
           <Header as="h4">pop()</Header>
@@ -107,18 +118,23 @@ class StackContainer extends Component {
             Pringle off of the stack of Pringles. Using a backing LinkedList,
             you'd simply use LinkedList's <code>removeFromFront()</code> method.
             Again, for an example of that, checkout our{" "}
-            <a href="linkedlist">LinkedList section</a>. When using a backing
-            array, you'd simply remove and return the element from index{" "}
-            <code>size - 1</code> as that represnets the top of your stack. This
-            also helps with runtime as you don't have to shift any elments over
-            as you would with ArrayList's <code>remove(int index)</code>. This
-            is because the bottom of the stack is at the very beginning of the
-            array. Regardless of what you use to back the Stack, this results as
-            a complexity of <code>O(1)</code> as with LinkedLists, you are just
-            using a <code>O(1)</code> method (<code>removeFromFront()</code>)
-            and with a backing array, you're just removing the item at the end
-            of the array without having to shift any elements or search
-            throughout the array.
+            <a
+              onClick={() => history.push("linkedlist")}
+              style={{ cursor: "pointer" }}
+            >
+              LinkedList section
+            </a>
+            . When using a backing array, you'd simply remove and return the
+            element from index <code>size - 1</code> as that represnets the top
+            of your stack. This also helps with runtime as you don't have to
+            shift any elments over as you would with ArrayList's{" "}
+            <code>remove(int index)</code>. This is because the bottom of the
+            stack is at the very beginning of the array. Regardless of what you
+            use to back the Stack, this results as a complexity of{" "}
+            <code>O(1)</code> as with LinkedLists, you are just using a{" "}
+            <code>O(1)</code> method (<code>removeFromFront()</code>) and with a
+            backing array, you're just removing the item at the end of the array
+            without having to shift any elements or search throughout the array.
           </p>
           <StackPop />
           <Header as="h4">peek()</Header>

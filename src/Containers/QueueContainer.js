@@ -2,7 +2,9 @@
 
 import React, { Component } from "react";
 import { Header, Container, Table, Button } from "semantic-ui-react";
-import { linkedListBigOInfo } from "../Constants/TableConstants";
+import QueueAdd from "../Components/QueueAdd";
+import StackPop from "../Components/StackPop";
+import { queueBigOInfo } from "../Constants/TableConstants";
 import BigOTable from "../Components/BigOTable";
 
 class QueueContainer extends Component {
@@ -47,6 +49,7 @@ class QueueContainer extends Component {
 
   render() {
     const { exampleArray, firstPointer, lastPointer, exampleStep } = this.state;
+    const { history } = this.props;
     const firstPointerStyles = {
       color: "blue",
     };
@@ -66,7 +69,13 @@ class QueueContainer extends Component {
             A <strong>queue</strong> is what is known as a <strong>FIFO</strong>{" "}
             <strong>abstract data type</strong>. We have two new definitions
             here so I'll break them down one at a time. Similar to{" "}
-            <a href="stack">LIFO</a>, <strong>FIFO</strong> stands for{" "}
+            <a
+              onClick={() => history.push("stack")}
+              style={{ cursor: "pointer" }}
+            >
+              LIFO
+            </a>
+            , <strong>FIFO</strong> stands for{" "}
             <strong>First in First out</strong>, in which we can only access the
             first thign that was added to the queue, and then the second, and
             the third, and then so on. You can think of this as a line of people
@@ -75,10 +84,16 @@ class QueueContainer extends Component {
             <strong>abstract data type</strong> is basically an outline on the
             expected behavior of the implemented data structure. It gives an
             idea as to how a data structure should be implemented, similar to an
-            interface. Like we've seen with <a href="stack">stacks</a>, there
-            can be different kinds of implementations using different kinds of
-            backing strutures. Data structures are these implementations of the
-            abstract data type.{" "}
+            interface. Like we've seen with{" "}
+            <a
+              onClick={() => history.push("stack")}
+              style={{ cursor: "pointer" }}
+            >
+              stacks
+            </a>
+            , there can be different kinds of implementations using different
+            kinds of backing strutures. Data structures are these
+            implementations of the abstract data type.{" "}
           </p>
 
           <p>
@@ -95,19 +110,30 @@ class QueueContainer extends Component {
           </p>
 
           <p>
-            Queues have three basic methods, like <a href="stack">stacks</a>:{" "}
-            <code>add(Object element)</code>, <code>remove()</code>, and{" "}
+            Queues have three basic methods, like{" "}
+            <a
+              onClick={() => history.push("stack")}
+              style={{ cursor: "pointer" }}
+            >
+              stacks
+            </a>
+            : <code>add(Object element)</code>, <code>remove()</code>, and{" "}
             <code>peek()</code>. They're all pretty self-explanatory;{" "}
             <code>add(Object element)</code> adds an item to the back of the
             queue, <code>remove()</code> removes and returns the item at the
             front of the queue, and <code>peek()</code> just returns the first
             item in the queue without removing it, just like in{" "}
-            <a href="stack">stacks</a>. You can think of them like this:{" "}
-            <code>add(Object element)</code> is when customer goes to the back
-            of a line, <code>remove()</code> is when the customer at the front
-            of the line is called to place their order, and <code>peek()</code>{" "}
-            is when the cashier takes a look at the front of the line to see
-            who's next.
+            <a
+              onClick={() => history.push("stack")}
+              style={{ cursor: "pointer" }}
+            >
+              stacks
+            </a>
+            . You can think of them like this: <code>add(Object element)</code>{" "}
+            is when customer goes to the back of a line, <code>remove()</code>{" "}
+            is when the customer at the front of the line is called to place
+            their order, and <code>peek()</code> is when the cashier takes a
+            look at the front of the line to see who's next.
           </p>
 
           <Header as="h3">What goes into making a Queue?</Header>
@@ -116,10 +142,16 @@ class QueueContainer extends Component {
             with a backing array. Additionally, queues will have a size variable
             like the other data structures we've covered. Backing a queue with a
             LinkedList is simple, all you really need is an{" "}
-            <a href="linkedlist">SLL</a> with a tail pointer. Then, the head
-            would represent the front of the queue and the tail would represent
-            the back of the queue. All you would need to do from there is simply
-            implement LinkedList's <code>removeFromFront()</code> and{" "}
+            <a
+              onClick={() => history.push("linkedlist")}
+              style={{ cursor: "pointer" }}
+            >
+              SLL
+            </a>{" "}
+            with a tail pointer. Then, the head would represent the front of the
+            queue and the tail would represent the back of the queue. All you
+            would need to do from there is simply implement LinkedList's{" "}
+            <code>removeFromFront()</code> and{" "}
             <code>addToBack(Object element)</code> which we've covered
             previously. Things become a bit more tricky when using an array. You
             would need to have a pointer to the first element in the queue and a
@@ -197,8 +229,14 @@ class QueueContainer extends Component {
           </p>
           <Header as="h3">So, how do these methods work?</Header>
           <p>
-            Similar to how we handled <a href="stack">stacks</a>, any
-            visualizations below will use a backing LinkedList.
+            Similar to how we handled{" "}
+            <a
+              onClick={() => history.push("stack")}
+              style={{ cursor: "pointer" }}
+            >
+              stacks
+            </a>
+            , any visualizations below will use a backing LinkedList.
           </p>
           <Header as="h4">add(Object element)</Header>
           <p>
@@ -207,7 +245,73 @@ class QueueContainer extends Component {
             <code>enqueue(Object element)</code> and{" "}
             <code>push(Object element)</code>. I just want you to be aware of
             this in case you see it referenced using one of these various names.
+            As I mentioned earlier, what happens here is basically the
+            equivalent of using LinkedList's{" "}
+            <code>addToBack(Object element)</code> method. We simply want to add
+            something to the back of the line, so we'll just put it at the end
+            of the list. As with <code>addToBack(Object element)</code>, this is
+            an <code>O(1)</code> operation as we are simply creating a new node
+            and updating the tail's pointers. NOTE: this is actually an
+            amortized <code>O(1)</code> operation when using a backing array as
+            you may have instances where you need to resize the backing array if
+            you run out of space, resulting in the copying of every value in the
+            current array. We're starting to see here the power of LinkedLists
+            and how effective they can be when we want to simply focus on adding
+            and removing from the front and the back. Let's take a look at an
+            example where we want to add the character "d" to the end of the
+            queue.
           </p>
+          <QueueAdd />
+          <p style={{ paddingTop: 12 }}>
+            As you can see, it's simply put at the end of the list (or line if
+            you will) in the exact same fashion as LinkedList's{" "}
+            <code>addToBack</code> method.
+          </p>
+          <Header as="h4">remove()</Header>
+          <p>
+            As mentioned earlier, this method is also referenced using different
+            names, like <code>pop()</code> and <code>dequeue()</code>. At the
+            end of the day, however, they mean the same thing. All this method
+            does is it returns and removes the item at the front of the queue
+            (like the next person in line). To do this, we just remove and
+            return the item at the front of the list, since we know that the
+            head of our list represents the front of our queue. To do this,
+            we'll simply follow the same procedures we followed in LinkedList's{" "}
+            <code>removeFromFront()</code> and even stack's <code>pop()</code>{" "}
+            (since <code>pop()</code> also removed and returned the head of the
+            list). Similar to LinkedList's <code>removeFromFront()</code>, this
+            is an <code>O(1)</code> operation when using a backing LinkedList as
+            you have direct access to the head and you are simply updating the
+            head's value. Let's take a look at an example.
+          </p>
+          <StackPop />
+          <p style={{ paddingTop: 12 }}>
+            As you can see, we simply return our head and set our head pointer
+            to the next element in the queue, just like in{" "}
+            <code>removeFromFront()</code>.
+          </p>
+          <Header as="h4">peek()</Header>
+          <p>
+            This method simply returns the item at the front of the queue,
+            similar to how in{" "}
+            <a
+              onClick={() => history.push("stack")}
+              style={{ cursor: "pointer" }}
+            >
+              stacks
+            </a>
+            , it returns the element at the top of the stack. However, it does{" "}
+            <strong>NOT</strong> remove the element, it simply returns it. So,
+            you would simply just return the head of your LinkedList without
+            actually removing the head itself. This is just like the cashier in
+            our example earlier that is peeking at the front of the line to see
+            who is up next. Since you have direct access to the head of the
+            queue, this is obviously an <code>O(1)</code> operation.
+          </p>
+          <Header as="h3" textAlign="center" style={{ paddingTop: 24 }}>
+            Big O Cheat Sheet
+          </Header>
+          <BigOTable rows={queueBigOInfo} />
         </Container>
       </div>
     );

@@ -39,6 +39,7 @@
 
 .text-container.text-container {
   max-width: calc(100% - 150px) !important;
+  padding-bottom: 24px;
 }
 
 .hidden {
