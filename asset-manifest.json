@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/DataStructureVisualizations/static/css/main.b614ce3c.chunk.css",
-    "main.js": "/DataStructureVisualizations/static/js/main.44c8978f.chunk.js",
-    "main.js.map": "/DataStructureVisualizations/static/js/main.44c8978f.chunk.js.map",
+    "main.css": "/DataStructureVisualizations/static/css/main.d3383c31.chunk.css",
+    "main.js": "/DataStructureVisualizations/static/js/main.3fea96bb.chunk.js",
+    "main.js.map": "/DataStructureVisualizations/static/js/main.3fea96bb.chunk.js.map",
     "runtime-main.js": "/DataStructureVisualizations/static/js/runtime-main.3cd2e167.js",
     "runtime-main.js.map": "/DataStructureVisualizations/static/js/runtime-main.3cd2e167.js.map",
-    "static/js/2.a6bd8e86.chunk.js": "/DataStructureVisualizations/static/js/2.a6bd8e86.chunk.js",
-    "static/js/2.a6bd8e86.chunk.js.map": "/DataStructureVisualizations/static/js/2.a6bd8e86.chunk.js.map",
+    "static/js/2.be3ff172.chunk.js": "/DataStructureVisualizations/static/js/2.be3ff172.chunk.js",
+    "static/js/2.be3ff172.chunk.js.map": "/DataStructureVisualizations/static/js/2.be3ff172.chunk.js.map",
     "index.html": "/DataStructureVisualizations/index.html",
-    "precache-manifest.945b3062e70c9254affe5370b40a1f23.js": "/DataStructureVisualizations/precache-manifest.945b3062e70c9254affe5370b40a1f23.js",
+    "precache-manifest.6f0ba52f689ef60687452b617e095447.js": "/DataStructureVisualizations/precache-manifest.6f0ba52f689ef60687452b617e095447.js",
     "service-worker.js": "/DataStructureVisualizations/service-worker.js",
-    "static/css/main.b614ce3c.chunk.css.map": "/DataStructureVisualizations/static/css/main.b614ce3c.chunk.css.map",
-    "static/js/2.a6bd8e86.chunk.js.LICENSE.txt": "/DataStructureVisualizations/static/js/2.a6bd8e86.chunk.js.LICENSE.txt",
+    "static/css/main.d3383c31.chunk.css.map": "/DataStructureVisualizations/static/css/main.d3383c31.chunk.css.map",
+    "static/js/2.be3ff172.chunk.js.LICENSE.txt": "/DataStructureVisualizations/static/js/2.be3ff172.chunk.js.LICENSE.txt",
     "static/media/add.e3345b64.svg": "/DataStructureVisualizations/static/media/add.e3345b64.svg",
     "static/media/get.f8904d77.svg": "/DataStructureVisualizations/static/media/get.f8904d77.svg",
     "static/media/linkedlist-add.0ab4ec67.svg": "/DataStructureVisualizations/static/media/linkedlist-add.0ab4ec67.svg",
@@ -19,6 +19,7 @@
     "static/media/linkedlist-remove-from-front.060aa2be.svg": "/DataStructureVisualizations/static/media/linkedlist-remove-from-front.060aa2be.svg",
     "static/media/linkedlist-removeFromBack.83c9596d.svg": "/DataStructureVisualizations/static/media/linkedlist-removeFromBack.83c9596d.svg",
     "static/media/linkedlist.7c6d0e4e.svg": "/DataStructureVisualizations/static/media/linkedlist.7c6d0e4e.svg",
+    "static/media/queue-add.e91af500.svg": "/DataStructureVisualizations/static/media/queue-add.e91af500.svg",
     "static/media/remove.91188648.svg": "/DataStructureVisualizations/static/media/remove.91188648.svg",
     "static/media/stack-pop.37601ba3.svg": "/DataStructureVisualizations/static/media/stack-pop.37601ba3.svg",
     "static/media/stack-push.4e80216b.svg": "/DataStructureVisualizations/static/media/stack-push.4e80216b.svg",
@@ -27,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3cd2e167.js",
-    "static/js/2.a6bd8e86.chunk.js",
-    "static/css/main.b614ce3c.chunk.css",
-    "static/js/main.44c8978f.chunk.js"
+    "static/js/2.be3ff172.chunk.js",
+    "static/css/main.d3383c31.chunk.css",
+    "static/js/main.3fea96bb.chunk.js"
   ]
 }
