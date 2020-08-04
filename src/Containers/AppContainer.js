@@ -17,7 +17,7 @@ class AppContainer extends Component {
         className="app-container"
       >
         <Segment basic>
-          <CurrentComponent />
+          <CurrentComponent history={history} />
         </Segment>
       </SidebarContainer>
     );

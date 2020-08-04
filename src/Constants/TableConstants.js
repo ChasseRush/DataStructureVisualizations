@@ -71,3 +71,21 @@ export const stackBigOInfo = [
     complexity: "O(1)",
   },
 ];
+
+export const queueBigOInfo = [
+  {
+    method: "push(Object element)",
+    description: "Adds a given element to the end of the queue",
+    complexity: "w/ LinkedList: O(1) | w/ array: O(1) amortized",
+  },
+  {
+    method: "pop()",
+    description: "Removes and returns the element at the front of the queue",
+    complexity: "O(1)",
+  },
+  {
+    method: "peek()",
+    description: "Simply returns the element at the front of the queue",
+    complexity: "O(1)",
+  },
+];
