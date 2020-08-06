@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DataStructureVisualizations/static/css/main.01ec031e.chunk.css",
-    "main.js": "/DataStructureVisualizations/static/js/main.ffbcfd9d.chunk.js",
-    "main.js.map": "/DataStructureVisualizations/static/js/main.ffbcfd9d.chunk.js.map",
+    "main.js": "/DataStructureVisualizations/static/js/main.651378d4.chunk.js",
+    "main.js.map": "/DataStructureVisualizations/static/js/main.651378d4.chunk.js.map",
     "runtime-main.js": "/DataStructureVisualizations/static/js/runtime-main.3cd2e167.js",
     "runtime-main.js.map": "/DataStructureVisualizations/static/js/runtime-main.3cd2e167.js.map",
     "static/css/2.11c8fdcf.chunk.css": "/DataStructureVisualizations/static/css/2.11c8fdcf.chunk.css",
     "static/js/2.26f63e2e.chunk.js": "/DataStructureVisualizations/static/js/2.26f63e2e.chunk.js",
     "static/js/2.26f63e2e.chunk.js.map": "/DataStructureVisualizations/static/js/2.26f63e2e.chunk.js.map",
     "index.html": "/DataStructureVisualizations/index.html",
-    "precache-manifest.d300227b628df3064338a7cf5743913d.js": "/DataStructureVisualizations/precache-manifest.d300227b628df3064338a7cf5743913d.js",
+    "precache-manifest.f1e887a2921c9bcda5e6cd8bdc86c82f.js": "/DataStructureVisualizations/precache-manifest.f1e887a2921c9bcda5e6cd8bdc86c82f.js",
     "service-worker.js": "/DataStructureVisualizations/service-worker.js",
     "static/css/2.11c8fdcf.chunk.css.map": "/DataStructureVisualizations/static/css/2.11c8fdcf.chunk.css.map",
     "static/css/main.01ec031e.chunk.css.map": "/DataStructureVisualizations/static/css/main.01ec031e.chunk.css.map",
@@ -21,7 +21,8 @@
     "static/media/linkedlist-remove-from-front.060aa2be.svg": "/DataStructureVisualizations/static/media/linkedlist-remove-from-front.060aa2be.svg",
     "static/media/linkedlist-removeFromBack.83c9596d.svg": "/DataStructureVisualizations/static/media/linkedlist-removeFromBack.83c9596d.svg",
     "static/media/linkedlist.7c6d0e4e.svg": "/DataStructureVisualizations/static/media/linkedlist.7c6d0e4e.svg",
-    "static/media/queue-add.e91af500.svg": "/DataStructureVisualizations/static/media/queue-add.e91af500.svg",
+    "static/media/queue-add.8c2048a8.svg": "/DataStructureVisualizations/static/media/queue-add.8c2048a8.svg",
+    "static/media/queue-remove.0833662c.svg": "/DataStructureVisualizations/static/media/queue-remove.0833662c.svg",
     "static/media/remove.91188648.svg": "/DataStructureVisualizations/static/media/remove.91188648.svg",
     "static/media/stack-pop.37601ba3.svg": "/DataStructureVisualizations/static/media/stack-pop.37601ba3.svg",
     "static/media/stack-push.4e80216b.svg": "/DataStructureVisualizations/static/media/stack-push.4e80216b.svg",
@@ -33,6 +34,6 @@
     "static/css/2.11c8fdcf.chunk.css",
     "static/js/2.26f63e2e.chunk.js",
     "static/css/main.01ec031e.chunk.css",
-    "static/js/main.ffbcfd9d.chunk.js"
+    "static/js/main.651378d4.chunk.js"
   ]
 }

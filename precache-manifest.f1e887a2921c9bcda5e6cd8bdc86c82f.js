@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ae39379b3ea31249dac7f0d53195259",
+    "revision": "377c0d1ba1d8d17d12509f06f2ed4acf",
     "url": "/DataStructureVisualizations/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DataStructureVisualizations/static/css/2.11c8fdcf.chunk.css"
   },
   {
-    "revision": "aa3c842152b6a5786a53",
+    "revision": "e909cee99716f5a8cfc0",
     "url": "/DataStructureVisualizations/static/css/main.01ec031e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DataStructureVisualizations/static/js/2.26f63e2e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aa3c842152b6a5786a53",
-    "url": "/DataStructureVisualizations/static/js/main.ffbcfd9d.chunk.js"
+    "revision": "e909cee99716f5a8cfc0",
+    "url": "/DataStructureVisualizations/static/js/main.651378d4.chunk.js"
   },
   {
     "revision": "db44765c893396323bbb",
@@ -56,8 +56,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DataStructureVisualizations/static/media/linkedlist.7c6d0e4e.svg"
   },
   {
-    "revision": "e91af50072e8b5b0c74f083dd1be1e49",
-    "url": "/DataStructureVisualizations/static/media/queue-add.e91af500.svg"
+    "revision": "8c2048a8628122dcdcbb99385ebec11c",
+    "url": "/DataStructureVisualizations/static/media/queue-add.8c2048a8.svg"
+  },
+  {
+    "revision": "0833662c5af8cc4cb743e331c054585b",
+    "url": "/DataStructureVisualizations/static/media/queue-remove.0833662c.svg"
   },
   {
     "revision": "911886483418ebd42aeb391663bc53d4",
