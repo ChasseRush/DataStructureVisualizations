@@ -79,3 +79,23 @@
   height: 35vh;
   color: white;
 }
+
+.animated-svg {
+  width: 80%;
+}
+
+.stack-backed-by {
+  width: 60%;
+}
+
+@media only screen and (max-width: 480px) {
+  .text-container.text-container {
+    max-width: 100% !important;
+  }
+  .animated-svg {
+    width: 100%;
+  }
+  .stack-backed-by {
+    width: 100%;
+  }
+}

@@ -46,7 +46,7 @@ class ArrayListGetComponent extends Component {
           handlePlayClick={this.handlePlayClick}
           handleResetClick={this.handleResetClick}
         />
-        <Get style={{ width: "80%" }} />
+        <Get className="animated-svg" />
       </div>
     );
   }

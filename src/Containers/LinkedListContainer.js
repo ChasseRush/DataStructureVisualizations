@@ -41,7 +41,7 @@ class LinkedListContainer extends Component {
             variable as well that just stores the number of nodes in the
             LinkedList. Take a look at the visual below.
           </p>
-          <LinkedListExample style={{ width: "80%" }} />
+          <LinkedListExample className="animated-svg" />
           <p style={{ paddingTop: 32 }}>
             As you can see, the head of the LinkedList is the first node in the
             list (A), and each node points to the node that comes after it. The

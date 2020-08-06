@@ -50,7 +50,7 @@ class StackPop extends Component {
           handlePlayClick={this.handlePlayClick}
           handleResetClick={this.handleResetClick}
         />
-        <Pop style={{ width: "80%" }} />
+        <Pop className="animated-svg" />
       </div>
     );
   }

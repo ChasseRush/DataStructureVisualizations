@@ -38,7 +38,8 @@ class LandingContainer extends Component {
             <Header as="h3">Getting started</Header>
             <p style={{ fontSize: "1.15rem" }}>
               To get started, just click on one of the data structures in the
-              bar to the side and it will bring you to our page about that data
+              bar to the side (or click on the little burger icon if you're on
+              mobile) and it will bring you to our page about that data
               structure. It's ordered in a way that such that each data
               structure builds on concepts covered in the ones that came before
               it, so if you're new to data structures, just start at the top and

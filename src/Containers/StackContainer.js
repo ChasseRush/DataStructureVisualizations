@@ -72,12 +72,12 @@ class StackContainer extends Component {
             }}
           >
             <Header as="h3">Backed by a LinkedList</Header>
-            <StackBackedByLL style={{ width: "60%" }} />
+            <StackBackedByLL className="stack-backed-by" />
             <Divider horizontal section>
               <Header as="h2">VERSUS</Header>
             </Divider>
             <Header as="h3">Backed by an Array</Header>
-            <StackBackedByArray style={{ width: "60%" }} />
+            <StackBackedByArray className="stack-backed-by" />
           </div>
           <Header as="h3">How do these methods work?</Header>
           <p>
