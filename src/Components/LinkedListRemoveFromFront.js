@@ -50,7 +50,7 @@ class LinkedListRemoveFromFront extends Component {
           handlePlayClick={this.handlePlayClick}
           handleResetClick={this.handleResetClick}
         />
-        <Remove style={{ width: "80%" }} />
+        <Remove className="animated-svg" />
       </div>
     );
   }

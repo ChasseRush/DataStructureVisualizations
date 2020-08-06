@@ -45,7 +45,7 @@ class ArrayListAdd extends Component {
           handlePlayClick={this.handlePlayClick}
           handleResetClick={this.handleResetClick}
         />
-        <Add style={{ width: "80%" }} />
+        <Add className="animated-svg" />
       </div>
     );
   }

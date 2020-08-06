@@ -55,7 +55,7 @@ class StackPush extends Component {
           handlePlayClick={this.handlePlayClick}
           handleResetClick={this.handleResetClick}
         />
-        <Push style={{ width: "80%" }} />
+        <Push className="animated-svg" />
       </div>
     );
   }

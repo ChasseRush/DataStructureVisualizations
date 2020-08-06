@@ -1,7 +1,9 @@
 "use-es6";
 
 import React, { Component } from "react";
-import { Menu, Header, Sidebar, Segment } from "semantic-ui-react";
+import { Menu, Sidebar, Responsive } from "semantic-ui-react";
+import DesktopSidebarComponent from "../Components/DesktopSidebarComponent";
+import MobileSidebarComponent from "../Components/MobileSidebarComponent";
 
 class SidebarContainer extends Component {
   constructor(props) {
@@ -23,56 +25,24 @@ class SidebarContainer extends Component {
   render() {
     const { activeLink } = this.state;
     return (
-      <Sidebar.Pushable as={Menu} className="app-container">
-        <Sidebar
-          as={Menu}
-          visible={true}
-          animation="push"
-          width="wide"
-          icon="labeled"
-          vertical
-          inverted
-        >
-          <Menu.Header
-            as="h3"
-            style={{ paddingTop: 24, color: "white", cursor: "pointer" }}
-            onClick={() => this.handleLinkClick("")}
+      <div>
+        <Responsive minWidth={480}>
+          <DesktopSidebarComponent
+            activeLink={activeLink}
+            handleLinkClick={this.handleLinkClick}
           >
-            Visual Data Structures
-          </Menu.Header>
-          <Menu.Item
-            name="arraylist"
-            active={activeLink === "arraylist"}
-            onClick={() => this.handleLinkClick("arraylist")}
+            {this.props.children}
+          </DesktopSidebarComponent>
+        </Responsive>
+        <Responsive maxWidth={479}>
+          <MobileSidebarComponent
+            activeLink={activeLink}
+            handleLinkClick={this.handleLinkClick}
           >
-            ArrayList
-          </Menu.Item>
-          <Menu.Item
-            name="linkedlist"
-            active={activeLink === "linkedlist"}
-            onClick={() => this.handleLinkClick("linkedlist")}
-          >
-            LinkedList
-          </Menu.Item>
-          <Menu.Item
-            name="stack"
-            active={activeLink === "stack"}
-            onClick={() => this.handleLinkClick("stack")}
-          >
-            Stack
-          </Menu.Item>
-          <Menu.Item
-            name="queue"
-            active={activeLink === "queue"}
-            onClick={() => this.handleLinkClick("queue")}
-          >
-            Queue
-          </Menu.Item>
-        </Sidebar>
-        <Sidebar.Pusher style={{ width: "calc(100% - 350px)" }}>
-          {this.props.children}
-        </Sidebar.Pusher>
-      </Sidebar.Pushable>
+            {this.props.children}
+          </MobileSidebarComponent>
+        </Responsive>
+      </div>
     );
   }
 }
