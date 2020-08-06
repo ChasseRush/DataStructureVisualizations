@@ -1,4 +1,8 @@
+## Welcome to Visual Data Structures
+
 This is a project I started to help people learn about Data Structures. It provides descriptions of the data structures themselves, their purpose, descriptions of their methods, the time complexity of those methods, and walkthrough-style animations that provide a visual form of learning.
+
+##### Currently hosted at https://chasserush.github.io/DataStructureVisualizations/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
