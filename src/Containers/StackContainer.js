@@ -136,7 +136,7 @@ class StackContainer extends Component {
             backing array, you're just removing the item at the end of the array
             without having to shift any elements or search throughout the array.
           </p>
-          <StackPop />
+          <StackPop useQueue={false} />
           <Header as="h4">peek()</Header>
           <p>
             This method simply returns the element at the top of the stack but
