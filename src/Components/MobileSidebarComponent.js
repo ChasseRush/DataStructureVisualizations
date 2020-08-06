@@ -49,7 +49,7 @@ class MobileSidebarComponent extends Component {
               <Burger
                 Component="button"
                 type="button"
-                isOpen={false}
+                isOpen={sidebarOpen}
                 style={{
                   backgroundColor: "inherit",
                   border: 0,

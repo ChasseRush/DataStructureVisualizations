@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import gsap from "gsap";
 import { ReactComponent as Pop } from "../svgs/Stack/stack-pop.svg";
+import { ReactComponent as Remove } from "../svgs/Queue/queue-remove.svg";
 import PausePlayButtons from "./PausePlayButtons";
 import { Header } from "semantic-ui-react";
 
@@ -37,6 +38,7 @@ class StackPop extends Component {
   }
 
   render() {
+    const { useQueue } = this.props;
     return (
       <div
         style={{
@@ -45,12 +47,16 @@ class StackPop extends Component {
           alignItems: "center",
         }}
       >
-        <Header>pop()</Header>
+        <Header>{useQueue ? "remove()" : "pop()"}</Header>
         <PausePlayButtons
           handlePlayClick={this.handlePlayClick}
           handleResetClick={this.handleResetClick}
         />
-        <Pop className="animated-svg" />
+        {useQueue ? (
+          <Remove className="animated-svg" />
+        ) : (
+          <Pop className="animated-svg" />
+        )}
       </div>
     );
   }

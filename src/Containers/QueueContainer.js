@@ -284,7 +284,7 @@ class QueueContainer extends Component {
             you have direct access to the head and you are simply updating the
             head's value. Let's take a look at an example.
           </p>
-          <StackPop />
+          <StackPop useQueue={true} />
           <p style={{ paddingTop: 12 }}>
             As you can see, we simply return our head and set our head pointer
             to the next element in the queue, just like in{" "}
