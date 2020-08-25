@@ -89,3 +89,30 @@ export const queueBigOInfo = [
     complexity: "O(1)",
   },
 ];
+
+export const hashMapBigOInfo = [
+  {
+    method: "put(K key, V value)",
+    description:
+      "Maps the given value to the given key, replacing the existing value if the key already exists in the HashMap",
+    complexity: "Best case: O(1), Worst case: O(n)",
+  },
+  {
+    method: "get(K key)",
+    description:
+      "Returns the value of the given key, returning null if it doesn't exist in the HashMap",
+    complexity: "Best case: O(1), Worst case: O(n)",
+  },
+  {
+    method: "getOrDefault(K key, V value)",
+    description:
+      "Returns the value of the given key, returning the given default value if it doesn't exist in the HashMap",
+    complexity: "Best case: O(1), Worst case: O(n)",
+  },
+  {
+    method: "remove(K key)",
+    description:
+      "Removes and returns the value of the given key, returning null if it doesn't exist in the HashMap",
+    complexity: "Best case: O(1), Worst case: O(n)",
+  },
+];

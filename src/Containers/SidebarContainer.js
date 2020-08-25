@@ -8,22 +8,16 @@ import MobileSidebarComponent from "../Components/MobileSidebarComponent";
 class SidebarContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      activeLink: props.currentlyActive,
-    };
     this.handleLinkClick = this.handleLinkClick.bind(this);
   }
 
   handleLinkClick(link) {
     const { history } = this.props;
     history.push(link);
-    this.setState({
-      activeLink: link,
-    });
   }
 
   render() {
-    const { activeLink } = this.state;
+    const activeLink = this.props.currentlyActive;
     return (
       <div>
         <Responsive minWidth={480}>

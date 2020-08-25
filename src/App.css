@@ -88,6 +88,16 @@
   width: 60%;
 }
 
+.button-as-link {
+  cursor: pointer;
+  border: 0px;
+  color: #4183c4;
+  text-decoration: none;
+  background: transparent;
+  margin: 0px;
+  padding: 0px;
+}
+
 @media only screen and (max-width: 480px) {
   .text-container.text-container {
     max-width: 100% !important;
