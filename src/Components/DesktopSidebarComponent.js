@@ -56,6 +56,13 @@ class DesktopSidebarComponent extends Component {
           >
             Queue
           </Menu.Item>
+          <Menu.Item
+            name="hashmap"
+            active={activeLink === "hashmap"}
+            onClick={() => this.props.handleLinkClick("hashmap")}
+          >
+            HashMap
+          </Menu.Item>
         </Sidebar>
         <Sidebar.Pusher style={{ width: "calc(100% - 350px)" }}>
           {this.props.children}
