@@ -69,12 +69,12 @@ class QueueContainer extends Component {
             A <strong>queue</strong> is what is known as a <strong>FIFO</strong>{" "}
             <strong>abstract data type</strong>. We have two new definitions
             here so I'll break them down one at a time. Similar to{" "}
-            <a
+            <button
               onClick={() => history.push("stack")}
-              style={{ cursor: "pointer" }}
+              className="button-as-link"
             >
               LIFO
-            </a>
+            </button>
             , <strong>FIFO</strong> stands for{" "}
             <strong>First in First out</strong>, in which we can only access the
             first thign that was added to the queue, and then the second, and
@@ -85,12 +85,12 @@ class QueueContainer extends Component {
             expected behavior of the implemented data structure. It gives an
             idea as to how a data structure should be implemented, similar to an
             interface. Like we've seen with{" "}
-            <a
+            <button
               onClick={() => history.push("stack")}
-              style={{ cursor: "pointer" }}
+              className="button-as-link"
             >
               stacks
-            </a>
+            </button>
             , there can be different kinds of implementations using different
             kinds of backing strutures. Data structures are these
             implementations of the abstract data type.{" "}
@@ -111,24 +111,24 @@ class QueueContainer extends Component {
 
           <p>
             Queues have three basic methods, like{" "}
-            <a
+            <button
               onClick={() => history.push("stack")}
-              style={{ cursor: "pointer" }}
+              className="button-as-link"
             >
               stacks
-            </a>
+            </button>
             : <code>add(Object element)</code>, <code>remove()</code>, and{" "}
             <code>peek()</code>. They're all pretty self-explanatory;{" "}
             <code>add(Object element)</code> adds an item to the back of the
             queue, <code>remove()</code> removes and returns the item at the
             front of the queue, and <code>peek()</code> just returns the first
             item in the queue without removing it, just like in{" "}
-            <a
+            <button
               onClick={() => history.push("stack")}
-              style={{ cursor: "pointer" }}
+              className="button-as-link"
             >
               stacks
-            </a>
+            </button>
             . You can think of them like this: <code>add(Object element)</code>{" "}
             is when customer goes to the back of a line, <code>remove()</code>{" "}
             is when the customer at the front of the line is called to place
@@ -142,12 +142,12 @@ class QueueContainer extends Component {
             with a backing array. Additionally, queues will have a size variable
             like the other data structures we've covered. Backing a queue with a
             LinkedList is simple, all you really need is an{" "}
-            <a
+            <button
               onClick={() => history.push("linkedlist")}
-              style={{ cursor: "pointer" }}
+              className="button-as-link"
             >
               SLL
-            </a>{" "}
+            </button>{" "}
             with a tail pointer. Then, the head would represent the front of the
             queue and the tail would represent the back of the queue. All you
             would need to do from there is simply implement LinkedList's{" "}
@@ -230,12 +230,12 @@ class QueueContainer extends Component {
           <Header as="h3">So, how do these methods work?</Header>
           <p>
             Similar to how we handled{" "}
-            <a
+            <button
               onClick={() => history.push("stack")}
-              style={{ cursor: "pointer" }}
+              className="button-as-link"
             >
               stacks
-            </a>
+            </button>
             , any visualizations below will use a backing LinkedList.
           </p>
           <Header as="h4">add(Object element)</Header>
@@ -294,12 +294,12 @@ class QueueContainer extends Component {
           <p>
             This method simply returns the item at the front of the queue,
             similar to how in{" "}
-            <a
+            <button
               onClick={() => history.push("stack")}
-              style={{ cursor: "pointer" }}
+              className="button-as-link"
             >
               stacks
-            </a>
+            </button>
             , it returns the element at the top of the stack. However, it does{" "}
             <strong>NOT</strong> remove the element, it simply returns it. So,
             you would simply just return the head of your LinkedList without
