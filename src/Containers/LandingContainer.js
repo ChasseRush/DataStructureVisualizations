@@ -16,7 +16,10 @@ class LandingContainer extends Component {
       >
         <div className="landing-container">
           <Header as="h1" textAlign="center" style={{ color: "white" }}>
-            Welcome to Data Structure Visualizations
+            Welcome to Data Structure Visualizations{" "}
+            <span role="img" aria-label="Hi!">
+              👋
+            </span>
           </Header>
           <Header as="h3" textAlign="center" style={{ color: "white" }}>
             A tool designed to help you learn data structures

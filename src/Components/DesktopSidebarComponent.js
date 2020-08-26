@@ -4,10 +4,6 @@ import React, { Component } from "react";
 import { Menu, Sidebar } from "semantic-ui-react";
 
 class DesktopSidebarComponent extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { activeLink } = this.props;
     return (
