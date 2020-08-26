@@ -1,7 +1,7 @@
 "use-es6";
 
 import React, { Component } from "react";
-import { Menu, Sidebar, Responsive } from "semantic-ui-react";
+import { Responsive } from "semantic-ui-react";
 import DesktopSidebarComponent from "../Components/DesktopSidebarComponent";
 import MobileSidebarComponent from "../Components/MobileSidebarComponent";
 
